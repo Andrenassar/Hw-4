@@ -1,0 +1,16 @@
+def my_steps (n):
+ if n < 1 or n > 25: 
+
+  if n == 1:
+    return 1
+  else if n == 2: 
+    return 2
+
+  first_step = 1
+  second_step = 2
+
+  for i in range(3, n+1):
+    total = first_step + second_step
+    first_step, second_step = second_step, total
+  return total_ways
+
